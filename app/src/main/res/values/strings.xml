@@ -1,0 +1,537 @@
+<resources>
+    <string name="app_name">SeniorProjectTutor</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="action_sign_uo">Sign Up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_main">Welcome to TutorApp! </string>
+    <string name="instructions_acitivty_main">Email format is as follows: xxxxxx@farmingdale.edu OR xxxxxxx@farmingdale.edu\nPasswords must be at least 4 characters in length</string>
+    <!--activity_sign_up.xml-->
+    <string name="first_name">Enter your first name...</string>
+    <string name="last_name">Enter your last name...</string>
+    <string name="email">Enter your email...</string>
+    <string name="phone">Enter your phone number...</string>
+    <string name="picture">Profile Picture</string>
+    <string name="picture_submit">Upload Picture</string>
+    <string name="submit">Submit</string>
+    <string name="register">Please register or edit your account. All fields except profile picture are required</string>
+    <string name="ramId">Enter your RAM ID</string>
+    <string name="tutorRate">Please enter your rates for 30 and 60 minute sessions</string>
+    <string name="student">Student</string>
+    <string name="tutor">Tutor</string>
+    <string name="password">Enter your password</string>
+    <string name="rate30">Enter rate for 30 minute session...</string>
+    <string name="rate60">Enter rate for 60 minute session...</string>
+
+    <!--Menu bar-->
+    <string name="menuAppointmentsView">Future Appointments</string>
+    <string name="menuPastAppointmentsView">Past Appointments</string>
+    <!-- Main menu -->
+    <string name="appointmentstudent">Find a Tutor</string>
+    <string name="appointmenttutor">Find a Student</string>
+    <string name="viewappointments">View Appointments</string>
+    <string name="viewavailability">View Availability</string>
+    <string name="settings">Settings</string>
+    <string name="possibleappointments">View Possible Appointments</string>
+    <string name="add_availability">Add Availability</string>
+    <string name="viewpastappointments">View Past Appointments</string>
+
+    <!--Tutor profile-->
+    <string name="reviews">Reviews</string>
+    <!--Search Page-->
+    <string name="course">Choose Course</string>
+    <string name="search_button">Add Availability</string>
+    <string name="student_availibility"></string>
+    <string name="available_from_prompt">Select start time and length of appointment</string>
+    <string name="end_time_prompt">End time:</string>
+    <string name="availability_from">Available From:</string>
+    <string name="availability_to">To:</string>
+    <string name="timeThirtyMinute">30 Minutes</string>
+    <string name="timeSixtyMinute">60 Minutes</string>
+    <string name="date_button">Pick Date</string>
+
+    <!--AddReview-->
+    <string name="review_prompt">Type your review below: Must contain less than 1000 characters</string>
+
+
+    <!-- maps-->
+    <string-array name="campus_buildings">
+        <item>Alumni Hall</item>
+        <item>Campus Center</item>
+        <item>Conklin Hall</item>
+        <item>Dewey Hall</item>
+        <item>Gleeson Hall</item>
+        <item>Greenley Library</item>
+        <item>Hale Hall </item>
+        <item>School of Business</item>
+        <item>Health and Wellness Center</item>
+        <item>Hooper Hall</item>
+        <item>Horton Hall</item>
+        <item>Knapp Hall</item>
+        <item>Laffin Hall</item>
+        <item>Lupton Hall</item>
+        <item>Memorial Hall</item>
+        <item>Nold Hall</item>
+        <item>Orchard Hall</item>
+        <item>Roosevelt Hall</item>
+        <item>Sinclair Hall</item>
+        <item>Thompson Hall</item>
+        <item>Ward Hall</item>
+        <item>Whitman Hall</item>
+    </string-array>
+
+    <!--Times array-->
+    <string-array name="times_array">
+        <item>0000</item>
+        <item>0030</item>
+        <item>0100</item>
+        <item>0130</item>
+        <item>0200</item>
+        <item>0230</item>
+        <item>0300</item>
+        <item>0330</item>
+        <item>0400</item>
+        <item>0430</item>
+        <item>0500</item>
+        <item>0530</item>
+        <item>0600</item>
+        <item>0630</item>
+        <item>0700</item>
+        <item>0730</item>
+        <item>0800</item>
+        <item>0830</item>
+        <item>0900</item>
+        <item>0930</item>
+        <item>1000</item>
+        <item>1030</item>
+        <item>1100</item>
+        <item>1130</item>
+        <item>1200</item>
+        <item>1230</item>
+        <item>1300</item>
+        <item>1330</item>
+        <item>1400</item>
+        <item>1430</item>
+        <item>1500</item>
+        <item>1530</item>
+        <item>1600</item>
+        <item>1630</item>
+        <item>1700</item>
+        <item>1730</item>
+        <item>1800</item>
+        <item>1830</item>
+        <item>1900</item>
+        <item>1930</item>
+        <item>2000</item>
+        <item>2030</item>
+        <item>2100</item>
+        <item>2130</item>
+        <item>2200</item>
+        <item>2230</item>
+        <item>2300</item>
+        <item>2330</item>
+    </string-array>
+
+    <!--Visually updated times array -->
+    <string-array name="times_array_visual">
+        <item>12:00 AM</item>
+        <item>12:30 AM</item>
+        <item>1:00 AM</item>
+        <item>1:30 AM</item>
+        <item>2:00 AM</item>
+        <item>2:30 AM</item>
+        <item>3:00 AM</item>
+        <item>3:30 AM</item>
+        <item>4:00 AM</item>
+        <item>4:30 AM</item>
+        <item>5:00 AM</item>
+        <item>5:30 AM</item>
+        <item>6:00 AM</item>
+        <item>6:30 AM</item>
+        <item>7:00 AM</item>
+        <item>7:30 AM</item>
+        <item>8:00 AM</item>
+        <item>8:30 AM</item>
+        <item>9:00 AM</item>
+        <item>9:30 AM</item>
+        <item>10:00 AM</item>
+        <item>10:30 AM</item>
+        <item>11:00 AM</item>
+        <item>11:30 AM</item>
+        <item>12:00 PM</item>
+        <item>12:30 PM</item>
+        <item>1:00 PM</item>
+        <item>1:30 PM</item>
+        <item>2:00 PM</item>
+        <item>2:30 PM</item>
+        <item>3:00 PM</item>
+        <item>3:30 PM</item>
+        <item>4:00 PM</item>
+        <item>4:30 PM</item>
+        <item>5:00 PM</item>
+        <item>0530 PM</item>
+        <item>6:00 PM</item>
+        <item>6:30 PM</item>
+        <item>7:00 PM</item>
+        <item>7:30 PM</item>
+        <item>8:00 PM</item>
+        <item>8:30 PM</item>
+        <item>9:00 PM</item>
+        <item>9:30 PM</item>
+        <item>10:00 PM</item>
+        <item>10:30 PM</item>
+        <item>11:00 PM</item>
+        <item>11:30 PM</item>
+    </string-array>
+
+    <!--unknown-->
+    <string name="proceed">Continue</string>
+    <string name="available">Check which days you are available and then input the times</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--Course Array-->
+    <string-array name="courses_array">
+        <item>BCS 101 Programming Concepts and Problem Solving.</item>
+        <item>BCS 102 Computer Concepts and Applications.</item>
+        <item>BCS 110 Introductory Special Topics in Computer Programming and Information Systems.</item>
+        <item>BCS 111 Introductory Special Topics in Computer Programming and Information Systems. </item>
+        <item>BCS 112 Introductory Special Topics in Computer Programming and Information Systems.</item>
+        <item>BCS 113 Introductory Special Topics in Computer Programming and Information Systems. </item>
+        <item>BCS 114 Introductory Special Topics in Computer Programming and Information Systems.</item>
+        <item>BCS 120 Foundations of Computer Programming I.</item>
+        <item>BCS 130 Website Development I.</item>
+        <item>BCS 136 Programming in COBOL I.</item>
+        <item>BCS 148 8086 and 8088 Assembler Programming I.</item>
+        <item>BCS 160 Computers, Society and Technology.</item>
+        <item>BCS 185 Programming in Visual Basic.</item>
+        <item>BCS 202 Computer Applications for Business/Sport Management.</item>
+        <item>BCS 204 Comparative Programming Languages.</item>
+        <item>BCS 205 Hardware and Software Selection.</item>
+        <item>BCS 208 Introduction to Networks.</item>
+        <item>BCS 209 Routing and Switching Essentials.</item>
+        <item>BCS 215 UNIX Operating Systems.</item>
+        <item>BCS 230 Foundations of Computer Programming II.</item>
+        <item>BCS 232 Electronic Commerce.</item>
+        <item>BCS 235 JavaScript and jQuery.</item>
+        <item>BCS 237 Intermediate COBOL Programming.</item>
+        <item>BCS 240 Website Development II.</item>
+        <item>BCS 250 JavaScript and jQuery.</item>
+        <item>BCS 255 Operating Systems.</item>
+        <item>BCS 260 Introduction to Database Systems.</item>
+        <item>BCS 262 Data Communications.</item>
+        <item>BCS 285 Advanced Programming Visual Basic.</item>
+        <item>BCS 300 Management Information Systems.</item>
+        <item>BCS 301 Systems Analysis and Design.</item>
+        <item>BCS 302 Systems Analysis and Design II.</item>
+        <item>BCS 303 XML.</item>
+        <item>BCS 311 Local Area Networks and Server Administration.</item>
+        <item>BCS 315 UNIX Operating Systems II.</item>
+        <item>BCS 316 PERL Programming.</item>
+        <item>BCS 317 Enterprise Resource Planning.</item>
+        <item>BCS 320 Scaling Networks.</item>
+        <item>BCS 321 Connecting Networks.</item>
+        <item>BCS 340 Introduction to Algorithms.</item>
+        <item>BCS 345 JAVA Programming.</item>
+        <item>BCS 346 Object Oriented Programming Using C++.</item>
+        <item>BCS 350 Web Database Development.</item>
+        <item>BCS 360 Programming in SQL.</item>
+        <item>BCS 370 Data Structures.</item>
+        <item>BCS 378 Information Security.</item>
+        <item>BCS 380 Advanced Database Programming.</item>
+        <item>BCS 390 Database Administration and Security.</item>
+        <item>BCS 405 IS Development Project Management.</item>
+        <item>BCS 410 Computer Architecture.</item>
+        <item>BCS 413 Advanced Enterprise Resource Planning.</item>
+        <item>BCS 415 Operating System Internals and Design.</item>
+        <item>BCS 420 Client/Server Computing.</item>
+        <item>BCS 421 Android Mobile Application Development.</item>
+        <item>BCS 422 iOS Mobile Application Development.</item>
+        <item>BCS 425 Business Intelligence and Data Warehousing.</item>
+        <item>BCS 427 Game Programming.</item>
+        <item>BCS 430W Senior Project (Writing Intensive).</item>
+        <item>BCS 440 CPIS Internship.</item>
+        <item>BCS 450 Special Topics in Computer Programming and Information Systems.</item>
+        <item>BCS 451 Special Topics.</item>
+        <item>BCS 460 Independent Study.</item>
+        <item>ECO 110 Introduction to Personal Finance.</item>
+        <item>ECO 120 The Global Economy.</item>
+        <item>ECO 156 Principles of Economics.</item>
+        <item>ECO 157 Principles of Economics.</item>
+        <item>ECO 205 Introduction to Social Science Modeling.</item>
+        <item>ECO 250 Quantitative Analysis for Economics.</item>
+        <item>ECO 255 Money and Banking.</item>
+        <item>ECO 259 Contemporary Economic Issues and Problems.</item>
+        <item>ECO 260 Intermediate Microeconomics.</item>
+        <item>ECO 262 Managerial Economics.</item>
+        <item>ECO 270 Intermediate Macroeconomics.</item>
+        <item>ECO 303 Arts and Entertainment Economics.</item>
+        <item>ECO 310 Health Economics and Policy.</item>
+        <item>ECO 320 Internet and Network Economics.</item>
+        <item>ECO 321 Engineering Economics.</item>
+        <item>ECO 330 Modern Economic Thought.</item>
+        <item>ECO 340 International Trade.</item>
+        <item>ECO 341 International Finance.</item>
+        <item>ECO 342 Financial Economics.</item>
+        <item>ECO 350 Economics of Global Disasters.</item>
+        <item>ECO 358 Economics of Labor.</item>
+        <item>ECO 360 Introduction to Experimental Economics.</item>
+        <item>ECO 380 Econometrics.</item>
+        <item>ECO 390 Special Topics in Economics.</item>
+        <item>ECO 401 Industrial Organization.</item>
+        <item>ECO 410 Public Finance/Sector Economic.</item>
+        <item>ECO 412 Cost-Benefit Analysis.</item>
+        <item>EET 104 DC/AC Circuits.</item>
+        <item>EET 105 Introduction to Digital Electronics.</item>
+        <item>EET 110 Computer Applications.</item>
+        <item>EET 111 Electric Circuits I.</item>
+        <item>EET 113 Electric Circuits II.</item>
+        <item>EET 118 Semiconductor Devices and Circuits.</item>
+        <item>EET 191 Electric Circuits Concepts and Components.</item>
+        <item>EET 200 Electronic Devices and Circuits.</item>
+        <item>EET 223 Digital Electronics.</item>
+        <item>EET 224 Amplifiers.</item>
+        <item>EET 225 Communications Electronics.</item>
+        <item>EET 251 Microprocessors.</item>
+        <item>EET 311 Network Analysis.</item>
+        <item>EET 316 Digital Design.</item>
+        <item>EET 317 Industrial Electronics.</item>
+        <item>EET 327 Signal Processing.</item>
+        <item>EET 414 Transmission Lines and Antennas.</item>
+        <item>EET 418 Microprocessor Interfacing and Control.</item>
+        <item>EET 420 Linear Systems and Controls.</item>
+        <item>EET 426 Digital Communications.</item>
+        <item>EET 428 Advanced Microprocessors Theory.</item>
+        <item>EET 441 Advanced Networking.</item>
+        <item>EET 450 Design Concepts.</item>
+        <item>EET 452 Design Project (Writing Intensive).</item>
+        <item>EET 490 Selected Topics in Electrical Engineering Technology.</item>
+        <item>EET 491 Selected Topics in Electrical Engineering Technology.</item>
+        <item>EET 492 Selected Topics in Electrical Engineering Technology.</item>
+        <item>EET 493 Selected Topics in Electrical Engineering Technology.</item>
+        <item>MTH 015 Elements of Algebra.</item>
+        <item>MTH 102 Elementary Discrete Mathematical Models.</item>
+        <item>MTH 103 Sets, Probability and Logic.</item>
+        <item>MTH 107 Introduction to Mathematical Ideas.</item>
+        <item>MTH 110 Statistics.</item>
+        <item>MTH 116 College Algebra.</item>
+        <item>MTH 117 Precalculus Modeling for the Life and Social Sciences.</item>
+        <item>MTH 129 Precalculus with Applications.</item>
+        <item>MTH 130 Calculus I with Applications.</item>
+        <item>MTH 150Calculus I.</item>
+        <item>MTH 151 Calculus II.</item>
+        <item>MTH 236 Calculus II with Applications.</item>
+        <item>MTH 245 Linear Algebra.</item>
+        <item>MTH 246 Introduction to Financial Mathematics.</item>
+        <item>MTH 250 Graph Theory and Combinatorics.</item>
+        <item>MTH 252 Calculus III.</item>
+        <item>MTH 253 Differential Equations.</item>
+        <item>MTH 270 Introduction to Mathematical Computing.</item>
+        <item>MTH 290 Methods of Proof in Advanced Mathematics.</item>
+        <item>MTH 320 Geometric Structures.</item>
+        <item>MTH 322 Advanced Mathematical Analysis.</item>
+        <item>MTH 325 Mathematical Modeling in the Biological Sciences.</item>
+        <item>MTH 326 Mathematical Modeling in Applied Sciences.</item>
+        <item>MTH 330 Applied Abstract Algebra.</item>
+        <item>MTH 331 Introduction to Topology.</item>
+        <item>MTH 346 Continuous Time Finance.</item>
+        <item>MTH 354 Principles of Real Analysis.</item>
+        <item>MTH 355 Principles of Complex Analysis.</item>
+        <item>MTH 356 Integrated Topics in Math and Physics.</item>
+        <item>MTH 360 Applied Probability and Statistics.</item>
+        <item>MTH 365 Vector Calculus.</item>
+        <item>MTH 385 Applied Partial Differential Equations.</item>
+        <item>MTH 390 Methods in Operations Research.</item>
+        <item>MTH 400 Problem Solving Seminar.</item>
+        <item>MTH 405 Seminar in Applied Mathematics.</item>
+        <item>MTH 422 Numerical Methods.</item>
+        <item>MTH 445 Linear Algebra II.</item>
+        <item>MTH 460 Applied Probability and Statistics II.</item>
+        <item>MTH 490 Topics in Applied Mathematics.</item>
+    </string-array>
+    <!--Course Code Array-->
+    <!--IMPORTANT: this array runs parallel with the Course Array.  The course array(above) is used to populate the spinner with descriptive text
+    while this array contains the 7 letter code that is entered into the database-->
+    <string-array name="courses_code_array">
+        <item>BCS101</item>
+        <item>BCS102</item>
+        <item>BCS110</item>
+        <item>BCS111</item>
+        <item>BCS112</item>
+        <item>BCS113</item>
+        <item>BCS114</item>
+        <item>BCS120</item>
+        <item>BCS130</item>
+        <item>BCS136</item>
+        <item>BCS148</item>
+        <item>BCS160</item>
+        <item>BCS185</item>
+        <item>BCS202</item>
+        <item>BCS204</item>
+        <item>BCS205</item>
+        <item>BCS208</item>
+        <item>BCS209</item>
+        <item>BCS215</item>
+        <item>BCS230</item>
+        <item>BCS232</item>
+        <item>BCS235</item>
+        <item>BCS237</item>
+        <item>BCS240</item>
+        <item>BCS250</item>
+        <item>BCS255</item>
+        <item>BCS260</item>
+        <item>BCS262</item>
+        <item>BCS285</item>
+        <item>BCS300</item>
+        <item>BCS301</item>
+        <item>BCS302</item>
+        <item>BCS303</item>
+        <item>BCS311</item>
+        <item>BCS315</item>
+        <item>BCS316</item>
+        <item>BCS317</item>
+        <item>BCS320</item>
+        <item>BCS321</item>
+        <item>BCS340</item>
+        <item>BCS345</item>
+        <item>BCS346</item>
+        <item>BCS350</item>
+        <item>BCS360</item>
+        <item>BCS370</item>
+        <item>BCS378</item>
+        <item>BCS380</item>
+        <item>BCS390</item>
+        <item>BCS405</item>
+        <item>BCS410</item>
+        <item>BCS413</item>
+        <item>BCS415</item>
+        <item>BCS420</item>
+        <item>BCS421</item>
+        <item>BCS422</item>
+        <item>BCS425</item>
+        <item>BCS427</item>
+        <item>BCS430W</item>
+        <item>BCS440</item>
+        <item>BCS450</item>
+        <item>BCS451</item>
+        <item>BCS460</item>
+        <item>ECO110</item>
+        <item>ECO120</item>
+        <item>ECO156</item>
+        <item>ECO157</item>
+        <item>ECO205</item>
+        <item>ECO250</item>
+        <item>ECO255</item>
+        <item>ECO259</item>
+        <item>ECO260</item>
+        <item>ECO262</item>
+        <item>ECO270</item>
+        <item>ECO303</item>
+        <item>ECO310</item>
+        <item>ECO320</item>
+        <item>ECO321</item>
+        <item>ECO330</item>
+        <item>ECO340</item>
+        <item>ECO341</item>
+        <item>ECO342</item>
+        <item>ECO350</item>
+        <item>ECO358</item>
+        <item>ECO360</item>
+        <item>ECO380</item>
+        <item>ECO390</item>
+        <item>ECO401</item>
+        <item>ECO410</item>
+        <item>ECO412</item>
+        <item>EET104</item>
+        <item>EET105</item>
+        <item>EET110</item>
+        <item>EET111</item>
+        <item>EET113</item>
+        <item>EET118</item>
+        <item>EET191</item>
+        <item>EET200</item>
+        <item>EET223</item>
+        <item>EET224</item>
+        <item>EET225</item>
+        <item>EET251</item>
+        <item>EET311</item>
+        <item>EET316</item>
+        <item>EET317</item>
+        <item>EET327</item>
+        <item>EET414</item>
+        <item>EET418</item>
+        <item>EET420</item>
+        <item>EET426</item>
+        <item>EET428</item>
+        <item>EET441</item>
+        <item>EET450</item>
+        <item>EET452</item>
+        <item>EET490</item>
+        <item>EET491</item>
+        <item>EET492</item>
+        <item>EET493</item>
+        <item>MTH015</item>
+        <item>MTH102</item>
+        <item>MTH103</item>
+        <item>MTH107</item>
+        <item>MTH110</item>
+        <item>MTH116</item>
+        <item>MTH117</item>
+        <item>MTH129</item>
+        <item>MTH130</item>
+        <item>MTH150</item>
+        <item>MTH151</item>
+        <item>MTH236</item>
+        <item>MTH245</item>
+        <item>MTH246</item>
+        <item>MTH250</item>
+        <item>MTH252</item>
+        <item>MTH253</item>
+        <item>MTH270</item>
+        <item>MTH290</item>
+        <item>MTH320</item>
+        <item>MTH322</item>
+        <item>MTH325</item>
+        <item>MTH326</item>
+        <item>MTH330</item>
+        <item>MTH331</item>
+        <item>MTH346</item>
+        <item>MTH354</item>
+        <item>MTH355</item>
+        <item>MTH356</item>
+        <item>MTH360</item>
+        <item>MTH365</item>
+        <item>MTH385</item>
+        <item>MTH390</item>
+        <item>MTH400</item>
+        <item>MTH405</item>
+        <item>MTH422</item>
+        <item>MTH445</item>
+        <item>MTH460</item>
+        <item>MTH490</item>
+    </string-array>
+</resources>

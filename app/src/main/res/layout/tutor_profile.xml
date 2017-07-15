@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcome_MainMenu"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollScrollView_TutorProfile">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytInnerRelativeLayout_TutorProfile">
+
+            <!--txt Name-->
+            <TextView
+                android:text="John Smith"
+                android:layout_width="172dp"
+                android:layout_height="50dp"
+                android:id="@+id/txtName_TutorProfile"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#003300"/>
+
+
+            <!--imgImage-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgImage_TutorProfile"
+                android:layout_below="@+id/txtName_TutorProfile"
+                android:layout_centerHorizontal="true"/>
+
+
+            <!--prgLoadingBar-->
+            <ProgressBar
+                android:id="@+id/prgLoadingBar_TutorProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtName_TutorProfile"/>
+
+
+
+            <!--txtCourses-->
+            <TextView
+                android:text="Courses: BCS 120, MTH 390, BCS 421"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCourse_TutorProfile"
+                android:layout_marginTop="110dp"
+                android:layout_below="@+id/txtName_TutorProfile"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="17dp"
+                />
+
+            <!--txtTimeAvailable-->
+            <TextView
+                android:text="Available:\n Days: Monday-Thursday \n Time: 1pm-6pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:id="@+id/txtTimeAvailable_TutorProfile"
+                android:layout_below="@+id/txtCourse_TutorProfile"
+                android:layout_alignLeft="@+id/txtCourse_TutorProfile"
+                />
+
+
+            <!--txtRate-->
+            <TextView
+                android:text="Rate: $40/hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:id="@+id/txtRate_TutorProfile"
+                android:layout_below="@+id/txtTimeAvailable_TutorProfile"
+                android:layout_alignLeft="@+id/txtTimeAvailable_TutorProfile"
+               />
+
+            <!--txtAdditionalInfo-->
+            <TextView
+                android:text="Additional Information: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txtAdditionalInfo_TutorProfile"
+                android:layout_below="@+id/txtRate_TutorProfile"
+                android:layout_alignLeft="@+id/txtRate_TutorProfile"
+               />
+
+            <!-- set appt-contact linearlayout-->
+            <LinearLayout
+                android:id="@+id/linearLayoutButtonContactSetApp_TutorProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAdditionalInfo_TutorProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <!--btnSetAppt-->
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="Set an Appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSetAppointment_TutorProfile"
+                        />
+
+                <!--btnContact-->
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="Contact Tutor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnContact_TutorProfile"
+                    />
+        </LinearLayout>
+
+        <!--reviews-->
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/reviews"
+            android:id="@+id/btnReviews_TutorProfile"
+            android:layout_below="@id/linearLayoutButtonContactSetApp_TutorProfile"
+            android:layout_centerHorizontal="true"/>
+
+        <!--maps-->
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnMaps_TutorProfile"
+            android:layout_below="@id/btnReviews_TutorProfile"
+            android:layout_centerHorizontal="true"
+        />
+        </RelativeLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>

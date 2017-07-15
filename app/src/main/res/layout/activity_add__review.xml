@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add__review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wtw.qws.seniorprojecttutor.Add_Review"
+    android:background="@android:color/darker_gray">
+
+    <!--Title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtTitle_AddReview"
+        android:textSize="20dp"
+        android:text="TEST"
+        />
+
+    <!-- Rating bar-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/txtTitle_AddReview"
+        android:id="@+id/ratRatingBar_AddReview" />
+
+    <!--review prompt-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_prompt"
+        android:layout_below="@id/ratRatingBar_AddReview"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtReviewPrompt_AddReview"/>
+
+
+    <!--character counter-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtReviewCharCount_AddReview"
+        android:layout_below="@+id/txtReviewPrompt_AddReview"
+        android:layout_alignParentLeft="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollScrollView_AddReview"
+        android:layout_below="@+id/txtReviewCharCount_AddReview">
+
+        <!--txtReview-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtReviewText_AddReview"
+            android:maxLines="5"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:hint="Enter review..."
+            />
+    </ScrollView>
+
+
+    <!--btnSubmit-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit_AddReview"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scrollScrollView_AddReview"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/submit"/>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
+
+    <!--title prompt-->
+    <TextView
+        android:text="@string/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlePrompt_SearchPage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!--Course search autocomplete-->
+    <Spinner
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlePrompt_SearchPage"
+        android:id="@+id/spnCourseSearchAuto_SearchPage"
+        android:entries="@array/courses_array"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"/>
+
+    <!--AvailableFrom prompt -->
+    --<TextView
+        android:text="@string/available_from_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/txtAvailableFrom_SearchPage"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+       android:layout_below="@id/spnCourseSearchAuto_SearchPage"
+        android:layout_centerHorizontal="true" />
+
+    <!--AvailableFrom drop down-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:entries="@array/times_array_visual"
+        android:id="@+id/spnAvailableFrom_SearchPage"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtAvailableFrom_SearchPage"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp" />
+
+    <!--thirtyMinute check-->
+    <CheckBox
+        android:text="@string/timeThirtyMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/chkThirtyMinute_SearchPage"
+        android:layout_below="@+id/spnAvailableFrom_SearchPage"
+        android:layout_centerHorizontal="true" />
+
+    <!--sixtyMinute check-->
+    <CheckBox
+        android:text="@string/timeSixtyMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkSixtyMinute_SearchPage"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chkThirtyMinute_SearchPage"
+        android:layout_centerHorizontal="true" />
+
+    <!--end time prompt-->
+    <TextView
+        android:text="@string/end_time_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEndTimePrompt_SearchPage"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chkSixtyMinute_SearchPage"
+        android:layout_centerHorizontal="true" />
+
+    <!--txtEndTime-->
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEndTimePrompt_SearchPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:id="@+id/txtEndTime_SearchPage" />
+
+
+    <!--Building search autocomplete-->
+    <Spinner
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEndTime_SearchPage"
+        android:id="@+id/spnBuildingSearchAuto_SearchPage"
+        android:entries="@array/campus_buildings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+       android:text="@string/date_button"
+        android:inputType="date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPickDate_SearchPage"
+        android:layout_below="@id/spnBuildingSearchAuto_SearchPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <!--btnSearch-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSearch_SearchPage"
+        android:layout_below="@id/btnPickDate_SearchPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

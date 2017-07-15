@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <!--title text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:id="@+id/txtTitle_MainActivity"
+        android:text="@string/title_activity_main"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--imgView-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imgSeal_MainActivity"
+        android:layout_below="@+id/txtTitle_MainActivity"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--email-->
+    <EditText
+        android:id="@+id/txtEmail_MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_below="@+id/imgSeal_MainActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <!-- password-->
+    <EditText
+        android:id="@+id/txtPassword_MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:layout_below="@+id/txtEmail_MainActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--txtInstructions-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPassword_MainActivity"
+        android:id="@+id/txtInstructions_MainActivity"
+        android:text="@string/instructions_acitivty_main"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutButtons_MainActivity"
+        android:layout_below="@+id/txtInstructions_MainActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- btnLogIn-->
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btnLogIn_MainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in"
+            android:layout_marginBottom="10dp"
+            />
+        <!-- btnSignUp-->
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btnSignUp_MainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_uo"
+           android:layout_marginBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

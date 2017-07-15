@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/darker_gray"
+    tools:context="com.wtw.qws.seniorprojecttutor.Sign_Up">
+
+    <!-- title prompt-->
+    <TextView
+
+        android:text="@string/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitlePrompt_SignUp"
+        android:layout_weight="0.47"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"/>
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtTitlePrompt_SignUp"
+    android:id="@+id/scrollScrollView_SignUp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytInnerRelativeLayout_SignUp">
+
+
+    <!--first name prompt-->
+    <TextView
+        android:id="@+id/txtFirstNamePrompt_SignUp"
+        android:text="@string/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"/>
+        <!--android:layout_below="@+id/txtTitlePrompt_SignUp"-->
+
+    <!--first name-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="first name"
+        android:ems="10"
+        android:id="@+id/txtFirstName_SignUp"
+        android:layout_below="@+id/txtFirstNamePrompt_SignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <!--last name prompt-->
+    <TextView
+        android:id="@+id/txtLastNamePrompt_SignUp"
+        android:text="@string/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFirstName_SignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <!--last name-->
+    <EditText
+        android:id="@+id/txtLastName_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="last name"
+        android:ems="10"
+        android:layout_below="@+id/txtLastNamePrompt_SignUp"
+        android:layout_marginTop="10dp"
+        />
+
+    <!--phone prompt-->
+    <TextView
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLastName_SignUp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtPhonePrompt_SignUp"
+        android:layout_weight="1.78"
+        android:layout_alignParentLeft="true" />
+
+    <!-- phone-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="5555555555"
+        android:ems="10"
+        android:layout_below="@+id/txtPhonePrompt_SignUp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtPhone_SignUp"
+        android:layout_alignParentLeft="true" />
+
+    <!--Linear layout for checkboxes-->
+    <LinearLayout
+        android:id="@+id/linearLayoutCheckbox_SignUp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtPhone_SignUp"
+         >
+
+        <CheckBox
+            android:text="@string/student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkStudent_SignUp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+
+            />
+
+        <CheckBox
+            android:text="@string/tutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkTutor_SignUp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <!--ram id prompt-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRamIdPrompt_SignUp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayoutCheckbox_SignUp"
+        android:text="@string/ramId"
+        />
+    <!--ram id-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRamId_SignUp"
+        android:layout_below="@+id/txtRamIdPrompt_SignUp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="R12345678"/>
+    <!--tutor rate prompt-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTutorRatePrompt_SignUp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:layout_below="@+id/linearLayoutCheckbox_SignUp"
+        android:text="@string/tutorRate"
+        />
+        <EditText
+            android:hint="30 Minute"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTutorThirtyMin_SignUp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:layout_below="@id/txtTutorRatePrompt_SignUp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:hint="60 Minute"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTutorSixtymin_SignUp"
+            android:layout_below="@id/txtTutorRatePrompt_SignUp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtTutorThirtyMin_SignUp"
+    android:id="@+id/linearLayoutProfilePicture_SignUp">
+
+    <!-- profile picture button-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProfilePicture_SignUp"
+        android:layout_below="@+id/txtRamId_SignUp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <!-- profile picture submit button-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/picture_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnProfilePictureSubmit_SignUp"
+        android:layout_below="@+id/txtRamId_SignUp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgProfilePicture_SignUp"
+            android:layout_below="@+id/linearLayoutProfilePicture_SignUp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+    <!-- submit button-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfilePicture_SignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnSubmit_SignUp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
